@@ -1,0 +1,387 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    background: url(/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: gilroy;
+    position: fixed;
+}
+nav{
+    width: 100%;
+    height: 10%;
+    color:white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 50px;
+    background-color: rgb(0, 0, 0);
+    position: fixed;
+    z-index: 1000;
+    font-family: gilroy;
+
+}
+.middlenav{
+    display: flex;
+    gap:50px;
+}
+.middlenav button{
+    background-color: transparent;
+    border: none;
+    padding:10px 0px;
+    font-family: gilroy;
+    color:white;
+    font-size: 16px;
+    cursor: pointer;
+    position: relative;
+}
+.middlenav button:before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left:0;
+    background-color: white;
+    transition: all ease 0.22s;
+}
+.middlenav button:hover:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height:2px;
+}
+nav > button{
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+    border-radius: 3px;
+    padding:10px 20px;
+    font-family: gilroy;
+    color:white;
+    font-size: 14px;
+    cursor: pointer;
+}
+.content{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}
+.content h1{
+    transform: translateY(12%);
+    font-size: 320px;
+    color: transparent;
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    -webkit-text-stroke-width: 10px;
+    -webkit-text-stroke-color: rgba(255, 255, 255, 0.989);
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.073);
+    mix-blend-mode: overlay;
+}
+.content input{
+    width: 30%;
+    padding:20px 20px;
+    border-radius: 50px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.174);
+    backdrop-filter: blur(3px);
+    color: white;
+}
+::placeholder{
+    color:rgb(232, 228, 228);
+    font-family: gilroy;
+}
+.picture{
+    width: 100%;
+    /* height: 200%; */
+    position: absolute;
+    top: 100%;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+}
+.pop{
+    width: 50%;
+    height: 654px;
+    position: sticky;
+    top: 10%;
+    left: 100%;
+    box-shadow: 0px 0px 18px black;
+}
+.pop img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.pop2{
+    width: 35%;
+    height: 654px;
+    position: sticky;
+    top: 10%;
+    left: 100%;
+    box-shadow: 0px 0px 18px black;
+
+}
+.pop2 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.pop3{
+    width: 25%;
+    height: 654px;
+    position: sticky;
+    top: 10%;
+    left: 100%;
+    box-shadow: 0px 0px 18px black;
+
+}
+.pop3 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.newpage{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    background-color: rgb(28, 47, 54);
+    top: 300%;
+    z-index: 30;
+    margin-top:503px;
+    box-shadow: 0px -5px 10px black;
+    font-family: gilroy;
+    padding-top:100px;
+}
+.textContainer{
+    width: 100%;
+    height:150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 50px;
+    /* border-bottom: 1px solid rgba(211, 211, 211, 0.522); */
+}
+.box{
+    width: 320px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box .icon{
+    font-size:30px;
+    color:white;
+}
+.text{
+    width:270px;
+    color:white;
+}
+.text h1{
+    font-size:16px; 
+    margin-top:10px;
+}
+.text p{
+    font-size:12px;
+}
+
+.tours{
+    width: 100%;
+    height:40rem;
+    /* background-color: antiquewhite; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:30px 50px;
+}
+.tours h1{
+    width: 100%;
+    text-align: center;
+    font-size:55px;
+    color:white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.699);
+}
+.tourcards{
+    width:19rem;
+    height:27rem;
+    border: 1px solid rgba(245, 245, 245, 0.637);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+.tourcards img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.about{
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: column;
+    text-align: center;
+    padding:20px;
+    position: absolute;
+    z-index: 999;
+    color:white;
+    background: linear-gradient(to top, rgb(0, 0, 0) , rgba(0, 0, 0, 0.677), rgba(0, 0, 0, 0.014));
+    transition: all 0.25s;
+}
+.about p{
+    font-size:12px;
+    margin-top: 14px;
+}
+
+
+.discover{
+    width: 100%;
+    height:90vh;
+    color: white;
+    background: url(/bgc2.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top:100px;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    padding:0px 50px;
+    background : linear-gradient(to bottom, rgb(28, 47, 54), rgba(0, 0, 0, 0.544),rgba(0, 0, 0, 0.43), rgba(0, 0, 0, 0.43));
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left{
+    width: 50%;
+}
+.left h1{
+    width: 100%;
+    font-size:80px;
+    text-shadow: 2px 2px 3px black;
+}
+.left p{
+    width: 90%;
+    padding-top:40px; 
+}
+.left button{
+    font-size:25px;
+    background-color: transparent;
+    color:white;
+    border: none;
+    padding-top:40px;
+    cursor: pointer;
+}
+iframe{
+    width:450px;
+    height:250px;
+}
+.travel{
+    width: 100%;
+    height:90vh;
+    background: url(/travelOverlay.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.travelOverlay{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, black, rgba(0, 0, 0, 0.537), rgba(0, 0, 0, 0.038));
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    padding:0px 50px;
+}
+.travelLeft {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:10px;
+}
+.travelLeft .one{
+    width: 100%;
+    height: 150px;
+}
+.travelLeft .one img{
+    width:200px;
+    height:150px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.travelLeft .two{
+    width: 100%;
+    height: 170px;
+    display: flex;
+    gap:10px;
+}
+.travelLeft .two img{
+    width:200px;
+    height:170px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.travelLeft .three{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    gap:10px;
+}
+.travelLeft .three img{
+    width:200px;
+    height:200px;
+    object-fit: cover;
+    object-position: center;
+}
+.travelRight{
+    width: 50%;
+    height: 100%;
+    text-align: right;
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.travelRight h1{
+    font-size:80px;
+}
+.travelRight p{
+    width: 80%;
+    margin-top:40px;
+}
+
+.footer{
+    width: 100%;
+    height:50vh;
+    background-color: black;
+    color:white;
+}
