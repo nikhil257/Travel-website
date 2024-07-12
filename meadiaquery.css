@@ -1,0 +1,462 @@
+@media (min-width: 320px) and (max-width: 600px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        overflow-X: hidden;
+    }
+    nav{
+        width: 100%;
+        height: 10%;;
+        padding:0px 10px;
+        position: initial;
+    }
+    .middlenav{
+        display:none;
+    }
+    nav button{
+        display: none;
+    }
+    .menu{
+        display: initial;
+        font-size: 20px;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        position: initial;
+    }
+    .content{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    .content h1{
+        width: 100%;
+        padding:0px;
+        font-size: 100px;
+        text-align: center;
+        -webkit-text-stroke-width: 6px;
+    }
+    .content input{
+        width: 90%;
+        padding:15px;
+        font-size: 12px;
+        /* margin-top: 90px;; */
+    }
+    .picture{
+        display: none;
+    }
+    .newpage{
+        top:25%;
+    }
+    .textContainer{
+        width: 100%;
+        height:auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap:80px;
+        padding:0px;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        width: 70%;
+    }
+    .text h1{
+        font-size: 14px;
+    }
+    .tours{
+        width: 100%;
+        height:auto;
+        padding:10px;
+        margin-top:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tours h1{
+        font-size: 28px;
+    }
+    .tourcards{
+        width: 70%;
+        height:300px;
+        margin-top:40px;
+    }
+    .about{
+        bottom:0;
+    }
+    .discover{
+        width: 100%;
+        height: auto;
+        padding:0px;
+        margin-top: 80px;
+    }
+    .overlay{
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 80%;
+        text-align: center;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        width: 100%;
+        font-size: 12px;
+        padding: 40px 0px ;
+    }
+    .left button{
+        font-size: 12px;;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .travel{
+        width: 100%;
+        height: auto;
+        padding:0px;
+    }
+    .travelOverlay{
+        padding:10px;
+        flex-direction: column;
+        background: linear-gradient(to left, black, rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.282));
+    }
+    .travelLeft{
+        width: 100%;
+        height:370px;
+    }
+    .travelLeft .one{
+        width: 100%;
+        height:120px;
+    }
+    .travelLeft .one img{
+        width:170px;
+        height:120px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelLeft .two{
+        width: 100%;
+        height:120px;
+    }
+    .travelLeft .two img{
+        width:170px;
+        height:120px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelLeft .three{
+        width: 100%;
+        height:120px;
+    }
+    .travelLeft .three img{
+        width:120px;
+        height:120px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelRight{
+        width: 100%; 
+        height:auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .travelRight h1{
+        font-size:30px;
+        margin-top:80px;
+    }
+    .travelRight p{
+        width: 80%;
+        padding-bottom: 40px;
+        font-size: 12px;
+    }
+    .footer{
+        width: 100%;
+        height: 10%;
+        padding:30px 0px;
+    }
+    .footer .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;;
+    }
+    .links a{
+        padding: 0px;
+        font-size: 12px;
+        margin:0px;
+    }
+    .links span{
+        padding:0px;
+        font-size: 20px;
+    }
+    .follow{
+        width: 100%;
+        border: none;
+        font-size: 12px;
+    }
+    .follow section{
+        font-size:18px;
+        justify-content: space-evenly;
+    }
+  }
+
+
+  @media (min-width: 601px) and (max-width: 1024px) {
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    html, body{
+        width: 100%;
+        height: 100%;
+    }
+    body{
+        overflow-X: hidden;
+    }
+    nav{
+        width: 100%;
+        height: 14%;;
+        padding:0px 10px;
+        position: initial;
+    }
+    .middlenav{
+        display:none;
+    }
+    nav button{
+        display: none;
+    }
+    .menu{
+        display: initial;
+        font-size: 20px;
+    }
+    .main{
+        width: 100%;
+        height: 100%;
+        position: initial;
+    }
+    .content{
+        width: 100%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:20px;
+    }
+    .content h1{
+        width: 100%;
+        padding:0px;
+        font-size: 100px;
+        text-align: center;
+        -webkit-text-stroke-width: 6px;
+    }
+    .content input{
+        width: 90%;
+        padding:15px;
+        font-size: 12px;
+        /* margin-top: 90px;; */
+    }
+    .picture{
+        display: none;
+    }
+    .newpage{
+        top:51%;
+    }
+    .textContainer{
+        width: 100%;
+        height:auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+        gap:80px;
+        padding:0px;
+    }
+    .box{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .text{
+        width: 70%;
+    }
+    .text h1{
+        font-size: 14px;
+    }
+    .tours{
+        width: 100%;
+        height:auto;
+        padding:10px;
+        margin-top:80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .tours h1{
+        font-size: 28px;
+    }
+    .tourcards{
+        width: 70%;
+        height:300px;
+        margin-top:40px;
+    }
+    .about{
+        bottom:0;
+    }
+    .discover{
+        width: 100%;
+        height: auto;
+        padding:0px;
+        margin-top: 80px;
+    }
+    .overlay{
+        padding:10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .left{
+        width: 80%;
+        text-align: center;
+    }
+    .left h1{
+        font-size: 30px;
+    }
+    .left p{
+        width: 100%;
+        font-size: 12px;
+        padding: 40px 0px ;
+    }
+    .left button{
+        font-size: 12px;;
+    }
+    iframe{
+        width: 300px;
+        height: 200px;
+    }
+    .travel{
+        width: 100%;
+        height: auto;
+        padding:0px;
+    }
+    .travelOverlay{
+        padding:10px;
+        flex-direction: column;
+        background: linear-gradient(to left, black, rgba(0, 0, 0, 0.567), rgba(0, 0, 0, 0.282));
+    }
+    .travelLeft{
+        width: 100%;
+        height:490px;
+    }
+    .travelLeft .one{
+        width: 100%;
+        height:150px;
+    }
+    .travelLeft .one img{
+        width:200px;
+        height:150px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelLeft .two{
+        width: 100%;
+        height:150px;
+    }
+    .travelLeft .two img{
+        width:200px;
+        height:150px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelLeft .three{
+        width: 100%;
+        height:150px;
+    }
+    .travelLeft .three img{
+        width:190px;
+        height:150px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .travelRight{
+        width: 100%; 
+        height:auto;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .travelRight h1{
+        font-size:30px;
+        margin-top:80px;
+    }
+    .travelRight p{
+        width: 80%;
+        padding-bottom: 40px;
+        font-size: 12px;
+    }
+    .footer{
+        width: 100%;
+        height: 10%;
+        padding:30px 0px;
+    }
+    .footer .links{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;;
+    }
+    .links a{
+        padding: 0px;
+        font-size: 12px;
+        margin:0px;
+    }
+    .links span{
+        padding:0px;
+        font-size: 20px;
+    }
+    .follow{
+        width: 100%;
+        border: none;
+        font-size: 12px;
+    }
+    .follow section{
+        font-size:18px;
+        justify-content: space-evenly;
+    }
+  }
